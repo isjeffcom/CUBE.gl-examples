@@ -36,11 +36,11 @@
 
             // // Add a ground
             let ground = new CUBE.Terrain().Ground(800, 800, 8)
-            this.C.Add(ground)
+            C.Add(ground)
             ground.position.y = -2.4
 
             // Poverty map by polygon geometry
-            let poverty = await (await Request.AsyncGet('./assets/geo/poverty.json')).json()
+            let poverty = await (await fetch('./assets/geo/poverty.json')).json()
             poverty.forEach(area => {
                 let color
                 if(area.val >= 20) color = 0x826040
@@ -48,7 +48,7 @@
                 if(area.val < 10) color = 0xAA752A
 
                 const mesh = new CUBE.Polygon(area.code, area.polygon).Ground({code: area.code, val: area.val}, {color: color, height: .5})
-                this.C.Add(mesh)
+                C.Add(mesh)
                 mesh.position.y = -1
             })
         }
