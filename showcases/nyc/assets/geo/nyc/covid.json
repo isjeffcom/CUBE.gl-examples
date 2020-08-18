@@ -1,0 +1,2672 @@
+[
+  {
+    "date": "2020-05-25",
+    "all": [
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10001,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.99
+        },
+        "case": 349.0,
+        "prate": 20.67
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10002,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -73.99
+        },
+        "case": 1011.0,
+        "prate": 28.69
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10003,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.99
+        },
+        "case": 439.0,
+        "prate": 17.8
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10004,
+        "coor": {
+          "latitude": 40.69,
+          "longitude": -74.02
+        },
+        "case": 30.0,
+        "prate": 18.29
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10005,
+        "coor": {
+          "latitude": 40.70615,
+          "longitude": -74.009494
+        },
+        "case": 59.0,
+        "prate": 14.6
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10006,
+        "coor": {
+          "latitude": 40.70895,
+          "longitude": -74.012866
+        },
+        "case": 23.0,
+        "prate": 13.61
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10007,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74.01
+        },
+        "case": 49.0,
+        "prate": 13.35
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10009,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.98
+        },
+        "case": 669.0,
+        "prate": 21.41
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10010,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -73.99
+        },
+        "case": 255.0,
+        "prate": 13.67
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10011,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74
+        },
+        "case": 507.0,
+        "prate": 20.19
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10012,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -74
+        },
+        "case": 156.0,
+        "prate": 16.79
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10013,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -74
+        },
+        "case": 253.0,
+        "prate": 19.25
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10014,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74.01
+        },
+        "case": 286.0,
+        "prate": 19.64
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10016,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.98
+        },
+        "case": 656.0,
+        "prate": 17.89
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10017,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.97
+        },
+        "case": 135.0,
+        "prate": 14.63
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10018,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -74
+        },
+        "case": 200.0,
+        "prate": 21.79
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10019,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.99
+        },
+        "case": 579.0,
+        "prate": 21.28
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10021,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.96
+        },
+        "case": 535.0,
+        "prate": 17.96
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10022,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.97
+        },
+        "case": 328.0,
+        "prate": 17.07
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10023,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.98
+        },
+        "case": 544.0,
+        "prate": 17.35
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10024,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.98
+        },
+        "case": 642.0,
+        "prate": 19.97
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10025,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.97
+        },
+        "case": 1246.0,
+        "prate": 22.58
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10026,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.95
+        },
+        "case": 622.0,
+        "prate": 26.16
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10027,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.96
+        },
+        "case": 986.0,
+        "prate": 27.68
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10028,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.96
+        },
+        "case": 455.0,
+        "prate": 17.55
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10029,
+        "coor": {
+          "latitude": 40.79,
+          "longitude": -73.95
+        },
+        "case": 1736.0,
+        "prate": 31.96
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10030,
+        "coor": {
+          "latitude": 40.82,
+          "longitude": -73.94
+        },
+        "case": 479.0,
+        "prate": 28.18
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10031,
+        "coor": {
+          "latitude": 40.83,
+          "longitude": -73.94
+        },
+        "case": 1249.0,
+        "prate": 31.69
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10032,
+        "coor": {
+          "latitude": 40.84,
+          "longitude": -73.94
+        },
+        "case": 1446.0,
+        "prate": 31.17
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10033,
+        "coor": {
+          "latitude": 40.85,
+          "longitude": -73.93
+        },
+        "case": 1286.0,
+        "prate": 30.88
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10034,
+        "coor": {
+          "latitude": 40.87,
+          "longitude": -73.92
+        },
+        "case": 682.0,
+        "prate": 26.05
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10035,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.94
+        },
+        "case": 921.0,
+        "prate": 30.94
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10036,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.99
+        },
+        "case": 403.0,
+        "prate": 22.11
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10037,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.94
+        },
+        "case": 523.0,
+        "prate": 24.82
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10038,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74
+        },
+        "case": 241.0,
+        "prate": 22.68
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10039,
+        "coor": {
+          "latitude": 40.831986,
+          "longitude": -73.937568
+        },
+        "case": 494.0,
+        "prate": 28.45
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10040,
+        "coor": {
+          "latitude": 40.86,
+          "longitude": -73.93
+        },
+        "case": 1072.0,
+        "prate": 31.76
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10044,
+        "coor": {
+          "latitude": 40.761302,
+          "longitude": -73.950354
+        },
+        "case": 229.0,
+        "prate": 29.1
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10065,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.96
+        },
+        "case": 323.0,
+        "prate": 15.96
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10069,
+        "coor": {
+          "latitude": 40.776046,
+          "longitude": -73.990511
+        },
+        "case": 54.0,
+        "prate": 18.31
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10075,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.95
+        },
+        "case": 396.0,
+        "prate": 21.53
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10128,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.95
+        },
+        "case": 613.0,
+        "prate": 17.19
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10280,
+        "coor": {
+          "latitude": 40.708702,
+          "longitude": -74.01715
+        },
+        "case": 47.0,
+        "prate": 14.11
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10282,
+        "coor": {
+          "latitude": 40.716904,
+          "longitude": -74.015159
+        },
+        "case": 69.0,
+        "prate": 25.75
+      }
+    ]
+  },
+  {
+    "date": "2020-05-26",
+    "all": [
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10001,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.99
+        },
+        "case": 349.0,
+        "prate": 20.41
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10002,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -73.99
+        },
+        "case": 1012.0,
+        "prate": 28.49
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10003,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.99
+        },
+        "case": 439.0,
+        "prate": 17.62
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10004,
+        "coor": {
+          "latitude": 40.69,
+          "longitude": -74.02
+        },
+        "case": 30.0,
+        "prate": 17.96
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10005,
+        "coor": {
+          "latitude": 40.70615,
+          "longitude": -74.009494
+        },
+        "case": 59.0,
+        "prate": 14.43
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10006,
+        "coor": {
+          "latitude": 40.70895,
+          "longitude": -74.012866
+        },
+        "case": 24.0,
+        "prate": 13.95
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10007,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74.01
+        },
+        "case": 49.0,
+        "prate": 13.24
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10009,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.98
+        },
+        "case": 670.0,
+        "prate": 21.15
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10010,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -73.99
+        },
+        "case": 255.0,
+        "prate": 13.59
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10011,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74
+        },
+        "case": 508.0,
+        "prate": 20.03
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10012,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -74
+        },
+        "case": 156.0,
+        "prate": 16.6
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10013,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -74
+        },
+        "case": 254.0,
+        "prate": 18.98
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10014,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74.01
+        },
+        "case": 287.0,
+        "prate": 19.48
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10016,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.98
+        },
+        "case": 656.0,
+        "prate": 17.74
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10017,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.97
+        },
+        "case": 135.0,
+        "prate": 14.5
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10018,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -74
+        },
+        "case": 200.0,
+        "prate": 21.67
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10019,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.99
+        },
+        "case": 579.0,
+        "prate": 21.15
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10021,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.96
+        },
+        "case": 535.0,
+        "prate": 17.88
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10022,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.97
+        },
+        "case": 328.0,
+        "prate": 16.58
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10023,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.98
+        },
+        "case": 546.0,
+        "prate": 17.22
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10024,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.98
+        },
+        "case": 642.0,
+        "prate": 19.79
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10025,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.97
+        },
+        "case": 1247.0,
+        "prate": 22.41
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10026,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.95
+        },
+        "case": 622.0,
+        "prate": 25.99
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10027,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.96
+        },
+        "case": 987.0,
+        "prate": 27.48
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10028,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.96
+        },
+        "case": 455.0,
+        "prate": 17.4
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10029,
+        "coor": {
+          "latitude": 40.79,
+          "longitude": -73.95
+        },
+        "case": 1739.0,
+        "prate": 31.84
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10030,
+        "coor": {
+          "latitude": 40.82,
+          "longitude": -73.94
+        },
+        "case": 480.0,
+        "prate": 28.05
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10031,
+        "coor": {
+          "latitude": 40.83,
+          "longitude": -73.94
+        },
+        "case": 1252.0,
+        "prate": 31.48
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10032,
+        "coor": {
+          "latitude": 40.84,
+          "longitude": -73.94
+        },
+        "case": 1450.0,
+        "prate": 31.11
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10033,
+        "coor": {
+          "latitude": 40.85,
+          "longitude": -73.93
+        },
+        "case": 1288.0,
+        "prate": 30.86
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10034,
+        "coor": {
+          "latitude": 40.87,
+          "longitude": -73.92
+        },
+        "case": 683.0,
+        "prate": 25.97
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10035,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.94
+        },
+        "case": 922.0,
+        "prate": 30.8
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10036,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.99
+        },
+        "case": 404.0,
+        "prate": 22.14
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10037,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.94
+        },
+        "case": 525.0,
+        "prate": 24.74
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10038,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74
+        },
+        "case": 242.0,
+        "prate": 22.71
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10039,
+        "coor": {
+          "latitude": 40.831986,
+          "longitude": -73.937568
+        },
+        "case": 494.0,
+        "prate": 28.24
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10040,
+        "coor": {
+          "latitude": 40.86,
+          "longitude": -73.93
+        },
+        "case": 1075.0,
+        "prate": 31.64
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10044,
+        "coor": {
+          "latitude": 40.761302,
+          "longitude": -73.950354
+        },
+        "case": 229.0,
+        "prate": 28.91
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10065,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.96
+        },
+        "case": 323.0,
+        "prate": 15.87
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10069,
+        "coor": {
+          "latitude": 40.776046,
+          "longitude": -73.990511
+        },
+        "case": 54.0,
+        "prate": 18.06
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10075,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.95
+        },
+        "case": 402.0,
+        "prate": 21.42
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10128,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.95
+        },
+        "case": 615.0,
+        "prate": 17.06
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10280,
+        "coor": {
+          "latitude": 40.708702,
+          "longitude": -74.01715
+        },
+        "case": 47.0,
+        "prate": 14.29
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10282,
+        "coor": {
+          "latitude": 40.716904,
+          "longitude": -74.015159
+        },
+        "case": 69.0,
+        "prate": 25.46
+      }
+    ]
+  },
+  {
+    "date": "2020-05-27",
+    "all": [
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10001,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.99
+        },
+        "case": 351.0,
+        "prate": 19.98
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10002,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -73.99
+        },
+        "case": 1012.0,
+        "prate": 28.03
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10003,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.99
+        },
+        "case": 440.0,
+        "prate": 17.31
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10004,
+        "coor": {
+          "latitude": 40.69,
+          "longitude": -74.02
+        },
+        "case": 31.0,
+        "prate": 17.14
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10005,
+        "coor": {
+          "latitude": 40.70615,
+          "longitude": -74.009494
+        },
+        "case": 59.0,
+        "prate": 14.15
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10006,
+        "coor": {
+          "latitude": 40.70895,
+          "longitude": -74.012866
+        },
+        "case": 24.0,
+        "prate": 13.79
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10007,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74.01
+        },
+        "case": 49.0,
+        "prate": 12.73
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10009,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.98
+        },
+        "case": 670.0,
+        "prate": 20.71
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10010,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -73.99
+        },
+        "case": 256.0,
+        "prate": 13.27
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10011,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74
+        },
+        "case": 509.0,
+        "prate": 19.52
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10012,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -74
+        },
+        "case": 156.0,
+        "prate": 16.2
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10013,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -74
+        },
+        "case": 256.0,
+        "prate": 18.51
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10014,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74.01
+        },
+        "case": 289.0,
+        "prate": 18.37
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10016,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.98
+        },
+        "case": 660.0,
+        "prate": 17.47
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10017,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.97
+        },
+        "case": 135.0,
+        "prate": 14.39
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10018,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -74
+        },
+        "case": 200.0,
+        "prate": 21.44
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10019,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.99
+        },
+        "case": 582.0,
+        "prate": 20.83
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10021,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.96
+        },
+        "case": 544.0,
+        "prate": 17.34
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10022,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.97
+        },
+        "case": 328.0,
+        "prate": 16.3
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10023,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.98
+        },
+        "case": 548.0,
+        "prate": 16.89
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10024,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.98
+        },
+        "case": 650.0,
+        "prate": 19.26
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10025,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.97
+        },
+        "case": 1257.0,
+        "prate": 22.11
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10026,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.95
+        },
+        "case": 623.0,
+        "prate": 25.68
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10027,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.96
+        },
+        "case": 987.0,
+        "prate": 27.16
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10028,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.96
+        },
+        "case": 455.0,
+        "prate": 17.11
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10029,
+        "coor": {
+          "latitude": 40.79,
+          "longitude": -73.95
+        },
+        "case": 1747.0,
+        "prate": 31.18
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10030,
+        "coor": {
+          "latitude": 40.82,
+          "longitude": -73.94
+        },
+        "case": 480.0,
+        "prate": 27.7
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10031,
+        "coor": {
+          "latitude": 40.83,
+          "longitude": -73.94
+        },
+        "case": 1260.0,
+        "prate": 30.82
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10032,
+        "coor": {
+          "latitude": 40.84,
+          "longitude": -73.94
+        },
+        "case": 1451.0,
+        "prate": 30.54
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10033,
+        "coor": {
+          "latitude": 40.85,
+          "longitude": -73.93
+        },
+        "case": 1297.0,
+        "prate": 30.21
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10034,
+        "coor": {
+          "latitude": 40.87,
+          "longitude": -73.92
+        },
+        "case": 685.0,
+        "prate": 25.74
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10035,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.94
+        },
+        "case": 923.0,
+        "prate": 30.4
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10036,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.99
+        },
+        "case": 405.0,
+        "prate": 21.74
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10037,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.94
+        },
+        "case": 527.0,
+        "prate": 24.57
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10038,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74
+        },
+        "case": 242.0,
+        "prate": 22.18
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10039,
+        "coor": {
+          "latitude": 40.831986,
+          "longitude": -73.937568
+        },
+        "case": 500.0,
+        "prate": 28.04
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10040,
+        "coor": {
+          "latitude": 40.86,
+          "longitude": -73.93
+        },
+        "case": 1077.0,
+        "prate": 31.21
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10044,
+        "coor": {
+          "latitude": 40.761302,
+          "longitude": -73.950354
+        },
+        "case": 231.0,
+        "prate": 28.98
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10065,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.96
+        },
+        "case": 323.0,
+        "prate": 15.54
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10069,
+        "coor": {
+          "latitude": 40.776046,
+          "longitude": -73.990511
+        },
+        "case": 54.0,
+        "prate": 17.31
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10075,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.95
+        },
+        "case": 413.0,
+        "prate": 21.01
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10128,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.95
+        },
+        "case": 616.0,
+        "prate": 16.79
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10280,
+        "coor": {
+          "latitude": 40.708702,
+          "longitude": -74.01715
+        },
+        "case": 48.0,
+        "prate": 13.62
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10282,
+        "coor": {
+          "latitude": 40.716904,
+          "longitude": -74.015159
+        },
+        "case": 70.0,
+        "prate": 24.82
+      }
+    ]
+  },
+  {
+    "date": "2020-05-28",
+    "all": [
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10001,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.99
+        },
+        "case": 354.0,
+        "prate": 18.86
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10002,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -73.99
+        },
+        "case": 1017.0,
+        "prate": 26.88
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10003,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.99
+        },
+        "case": 442.0,
+        "prate": 16.07
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10004,
+        "coor": {
+          "latitude": 40.69,
+          "longitude": -74.02
+        },
+        "case": 31.0,
+        "prate": 16.76
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10005,
+        "coor": {
+          "latitude": 40.70615,
+          "longitude": -74.009494
+        },
+        "case": 60.0,
+        "prate": 13.56
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10006,
+        "coor": {
+          "latitude": 40.70895,
+          "longitude": -74.012866
+        },
+        "case": 24.0,
+        "prate": 13.04
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10007,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74.01
+        },
+        "case": 49.0,
+        "prate": 12.04
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10009,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.98
+        },
+        "case": 676.0,
+        "prate": 19.61
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10010,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -73.99
+        },
+        "case": 257.0,
+        "prate": 12.54
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10011,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74
+        },
+        "case": 512.0,
+        "prate": 18.2
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10012,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -74
+        },
+        "case": 158.0,
+        "prate": 15.13
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10013,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -74
+        },
+        "case": 255.0,
+        "prate": 17.67
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10014,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74.01
+        },
+        "case": 291.0,
+        "prate": 16.67
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10016,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.98
+        },
+        "case": 660.0,
+        "prate": 16.66
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10017,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.97
+        },
+        "case": 136.0,
+        "prate": 13.98
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10018,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -74
+        },
+        "case": 200.0,
+        "prate": 20.53
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10019,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.99
+        },
+        "case": 583.0,
+        "prate": 19.61
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10021,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.96
+        },
+        "case": 545.0,
+        "prate": 16.68
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10022,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.97
+        },
+        "case": 329.0,
+        "prate": 15.5
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10023,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.98
+        },
+        "case": 548.0,
+        "prate": 15.68
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10024,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.98
+        },
+        "case": 659.0,
+        "prate": 18.35
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10025,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.97
+        },
+        "case": 1259.0,
+        "prate": 21.3
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10026,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.95
+        },
+        "case": 627.0,
+        "prate": 24.69
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10027,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.96
+        },
+        "case": 994.0,
+        "prate": 26.24
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10028,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.96
+        },
+        "case": 456.0,
+        "prate": 16.41
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10029,
+        "coor": {
+          "latitude": 40.79,
+          "longitude": -73.95
+        },
+        "case": 1762.0,
+        "prate": 30.14
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10030,
+        "coor": {
+          "latitude": 40.82,
+          "longitude": -73.94
+        },
+        "case": 485.0,
+        "prate": 26.83
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10031,
+        "coor": {
+          "latitude": 40.83,
+          "longitude": -73.94
+        },
+        "case": 1268.0,
+        "prate": 29.81
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10032,
+        "coor": {
+          "latitude": 40.84,
+          "longitude": -73.94
+        },
+        "case": 1462.0,
+        "prate": 29.58
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10033,
+        "coor": {
+          "latitude": 40.85,
+          "longitude": -73.93
+        },
+        "case": 1301.0,
+        "prate": 29.33
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10034,
+        "coor": {
+          "latitude": 40.87,
+          "longitude": -73.92
+        },
+        "case": 689.0,
+        "prate": 25.29
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10035,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.94
+        },
+        "case": 923.0,
+        "prate": 29.5
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10036,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.99
+        },
+        "case": 406.0,
+        "prate": 20.23
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10037,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.94
+        },
+        "case": 528.0,
+        "prate": 24.11
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10038,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74
+        },
+        "case": 244.0,
+        "prate": 21.24
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10039,
+        "coor": {
+          "latitude": 40.831986,
+          "longitude": -73.937568
+        },
+        "case": 502.0,
+        "prate": 27.26
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10040,
+        "coor": {
+          "latitude": 40.86,
+          "longitude": -73.93
+        },
+        "case": 1079.0,
+        "prate": 30.49
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10044,
+        "coor": {
+          "latitude": 40.761302,
+          "longitude": -73.950354
+        },
+        "case": 231.0,
+        "prate": 27.9
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10065,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.96
+        },
+        "case": 324.0,
+        "prate": 14.8
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10069,
+        "coor": {
+          "latitude": 40.776046,
+          "longitude": -73.990511
+        },
+        "case": 54.0,
+        "prate": 16.07
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10075,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.95
+        },
+        "case": 416.0,
+        "prate": 20.54
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10128,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.95
+        },
+        "case": 619.0,
+        "prate": 16.07
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10280,
+        "coor": {
+          "latitude": 40.708702,
+          "longitude": -74.01715
+        },
+        "case": 50.0,
+        "prate": 13.19
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10282,
+        "coor": {
+          "latitude": 40.716904,
+          "longitude": -74.015159
+        },
+        "case": 70.0,
+        "prate": 24.05
+      }
+    ]
+  },
+  {
+    "date": "2020-05-29",
+    "all": [
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10001,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.99
+        },
+        "case": 354.0,
+        "prate": 18.75
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10002,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -73.99
+        },
+        "case": 1018.0,
+        "prate": 26.22
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10003,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.99
+        },
+        "case": 445.0,
+        "prate": 15.72
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10004,
+        "coor": {
+          "latitude": 40.69,
+          "longitude": -74.02
+        },
+        "case": 31.0,
+        "prate": 16.49
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10005,
+        "coor": {
+          "latitude": 40.70615,
+          "longitude": -74.009494
+        },
+        "case": 60.0,
+        "prate": 13.61
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10006,
+        "coor": {
+          "latitude": 40.70895,
+          "longitude": -74.012866
+        },
+        "case": 24.0,
+        "prate": 12.63
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10007,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74.01
+        },
+        "case": 52.0,
+        "prate": 11.37
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10009,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.98
+        },
+        "case": 681.0,
+        "prate": 19.25
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10010,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -73.99
+        },
+        "case": 258.0,
+        "prate": 12.34
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10011,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74
+        },
+        "case": 513.0,
+        "prate": 17.81
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10012,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -74
+        },
+        "case": 158.0,
+        "prate": 14.88
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10013,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -74
+        },
+        "case": 256.0,
+        "prate": 17.17
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10014,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74.01
+        },
+        "case": 291.0,
+        "prate": 16.41
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10016,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.98
+        },
+        "case": 670.0,
+        "prate": 16.35
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10017,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.97
+        },
+        "case": 136.0,
+        "prate": 13.7
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10018,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -74
+        },
+        "case": 202.0,
+        "prate": 19.96
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10019,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.99
+        },
+        "case": 584.0,
+        "prate": 19.11
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10021,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.96
+        },
+        "case": 547.0,
+        "prate": 16.25
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10022,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.97
+        },
+        "case": 330.0,
+        "prate": 15.23
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10023,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.98
+        },
+        "case": 551.0,
+        "prate": 15.24
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10024,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.98
+        },
+        "case": 668.0,
+        "prate": 18.13
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10025,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.97
+        },
+        "case": 1264.0,
+        "prate": 20.82
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10026,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.95
+        },
+        "case": 627.0,
+        "prate": 24.37
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10027,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.96
+        },
+        "case": 997.0,
+        "prate": 25.96
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10028,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.96
+        },
+        "case": 458.0,
+        "prate": 16.17
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10029,
+        "coor": {
+          "latitude": 40.79,
+          "longitude": -73.95
+        },
+        "case": 1771.0,
+        "prate": 29.57
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10030,
+        "coor": {
+          "latitude": 40.82,
+          "longitude": -73.94
+        },
+        "case": 486.0,
+        "prate": 26.44
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10031,
+        "coor": {
+          "latitude": 40.83,
+          "longitude": -73.94
+        },
+        "case": 1271.0,
+        "prate": 29.15
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10032,
+        "coor": {
+          "latitude": 40.84,
+          "longitude": -73.94
+        },
+        "case": 1465.0,
+        "prate": 29.17
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10033,
+        "coor": {
+          "latitude": 40.85,
+          "longitude": -73.93
+        },
+        "case": 1304.0,
+        "prate": 28.91
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10034,
+        "coor": {
+          "latitude": 40.87,
+          "longitude": -73.92
+        },
+        "case": 692.0,
+        "prate": 24.92
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10035,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.94
+        },
+        "case": 926.0,
+        "prate": 29.11
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10036,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.99
+        },
+        "case": 406.0,
+        "prate": 19.9
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10037,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.94
+        },
+        "case": 531.0,
+        "prate": 23.51
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10038,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74
+        },
+        "case": 244.0,
+        "prate": 20.89
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10039,
+        "coor": {
+          "latitude": 40.831986,
+          "longitude": -73.937568
+        },
+        "case": 504.0,
+        "prate": 27.0
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10040,
+        "coor": {
+          "latitude": 40.86,
+          "longitude": -73.93
+        },
+        "case": 1081.0,
+        "prate": 29.97
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10044,
+        "coor": {
+          "latitude": 40.761302,
+          "longitude": -73.950354
+        },
+        "case": 232.0,
+        "prate": 27.36
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10065,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.96
+        },
+        "case": 324.0,
+        "prate": 14.53
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10069,
+        "coor": {
+          "latitude": 40.776046,
+          "longitude": -73.990511
+        },
+        "case": 54.0,
+        "prate": 15.43
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10075,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.95
+        },
+        "case": 417.0,
+        "prate": 20.09
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10128,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.95
+        },
+        "case": 621.0,
+        "prate": 15.84
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10280,
+        "coor": {
+          "latitude": 40.708702,
+          "longitude": -74.01715
+        },
+        "case": 50.0,
+        "prate": 13.4
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10282,
+        "coor": {
+          "latitude": 40.716904,
+          "longitude": -74.015159
+        },
+        "case": 70.0,
+        "prate": 23.65
+      }
+    ]
+  },
+  {
+    "date": "2020-05-30",
+    "all": [
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10001,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.99
+        },
+        "case": 358.0,
+        "prate": 17.77
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10002,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -73.99
+        },
+        "case": 1027.0,
+        "prate": 24.53
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10003,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.99
+        },
+        "case": 445.0,
+        "prate": 14.64
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10004,
+        "coor": {
+          "latitude": 40.69,
+          "longitude": -74.02
+        },
+        "case": 31.0,
+        "prate": 15.2
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10005,
+        "coor": {
+          "latitude": 40.70615,
+          "longitude": -74.009494
+        },
+        "case": 61.0,
+        "prate": 12.79
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10006,
+        "coor": {
+          "latitude": 40.70895,
+          "longitude": -74.012866
+        },
+        "case": 24.0,
+        "prate": 11.59
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10007,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74.01
+        },
+        "case": 54.0,
+        "prate": 10.59
+      },
+      {
+        "area": "Union Square - Lower East Side",
+        "zcta": 10009,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -73.98
+        },
+        "case": 685.0,
+        "prate": 17.95
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10010,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -73.99
+        },
+        "case": 258.0,
+        "prate": 11.43
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10011,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74
+        },
+        "case": 516.0,
+        "prate": 16.62
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10012,
+        "coor": {
+          "latitude": 40.73,
+          "longitude": -74
+        },
+        "case": 160.0,
+        "prate": 13.97
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10013,
+        "coor": {
+          "latitude": 40.72,
+          "longitude": -74
+        },
+        "case": 257.0,
+        "prate": 16.07
+      },
+      {
+        "area": "Greenwich Village - Soho",
+        "zcta": 10014,
+        "coor": {
+          "latitude": 40.74,
+          "longitude": -74.01
+        },
+        "case": 292.0,
+        "prate": 15.23
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10016,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.98
+        },
+        "case": 673.0,
+        "prate": 15.63
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10017,
+        "coor": {
+          "latitude": 40.75,
+          "longitude": -73.97
+        },
+        "case": 138.0,
+        "prate": 12.96
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10018,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -74
+        },
+        "case": 202.0,
+        "prate": 19.18
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10019,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.99
+        },
+        "case": 586.0,
+        "prate": 17.99
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10021,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.96
+        },
+        "case": 549.0,
+        "prate": 15.31
+      },
+      {
+        "area": "Gramercy Park - Murray Hill",
+        "zcta": 10022,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.97
+        },
+        "case": 335.0,
+        "prate": 14.32
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10023,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.98
+        },
+        "case": 554.0,
+        "prate": 14.4
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10024,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.98
+        },
+        "case": 675.0,
+        "prate": 17.1
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10025,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.97
+        },
+        "case": 1276.0,
+        "prate": 19.52
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10026,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.95
+        },
+        "case": 628.0,
+        "prate": 23.17
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10027,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.96
+        },
+        "case": 1004.0,
+        "prate": 24.85
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10028,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.96
+        },
+        "case": 460.0,
+        "prate": 15.04
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10029,
+        "coor": {
+          "latitude": 40.79,
+          "longitude": -73.95
+        },
+        "case": 1782.0,
+        "prate": 28.16
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10030,
+        "coor": {
+          "latitude": 40.82,
+          "longitude": -73.94
+        },
+        "case": 489.0,
+        "prate": 25.36
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10031,
+        "coor": {
+          "latitude": 40.83,
+          "longitude": -73.94
+        },
+        "case": 1280.0,
+        "prate": 27.32
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10032,
+        "coor": {
+          "latitude": 40.84,
+          "longitude": -73.94
+        },
+        "case": 1471.0,
+        "prate": 27.91
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10033,
+        "coor": {
+          "latitude": 40.85,
+          "longitude": -73.93
+        },
+        "case": 1305.0,
+        "prate": 27.19
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10034,
+        "coor": {
+          "latitude": 40.87,
+          "longitude": -73.92
+        },
+        "case": 694.0,
+        "prate": 23.88
+      },
+      {
+        "area": "East Harlem",
+        "zcta": 10035,
+        "coor": {
+          "latitude": 40.8,
+          "longitude": -73.94
+        },
+        "case": 929.0,
+        "prate": 28.13
+      },
+      {
+        "area": "Chelsea - Clinton",
+        "zcta": 10036,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.99
+        },
+        "case": 407.0,
+        "prate": 18.96
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10037,
+        "coor": {
+          "latitude": 40.81,
+          "longitude": -73.94
+        },
+        "case": 530.0,
+        "prate": 22.69
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10038,
+        "coor": {
+          "latitude": 40.71,
+          "longitude": -74
+        },
+        "case": 246.0,
+        "prate": 19.35
+      },
+      {
+        "area": "Central Harlem - Morningside Height",
+        "zcta": 10039,
+        "coor": {
+          "latitude": 40.831986,
+          "longitude": -73.937568
+        },
+        "case": 507.0,
+        "prate": 26.07
+      },
+      {
+        "area": "Washington Heights - Inwood",
+        "zcta": 10040,
+        "coor": {
+          "latitude": 40.86,
+          "longitude": -73.93
+        },
+        "case": 1086.0,
+        "prate": 28.96
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10044,
+        "coor": {
+          "latitude": 40.761302,
+          "longitude": -73.950354
+        },
+        "case": 232.0,
+        "prate": 26.27
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10065,
+        "coor": {
+          "latitude": 40.76,
+          "longitude": -73.96
+        },
+        "case": 326.0,
+        "prate": 13.58
+      },
+      {
+        "area": "Upper West Side",
+        "zcta": 10069,
+        "coor": {
+          "latitude": 40.776046,
+          "longitude": -73.990511
+        },
+        "case": 54.0,
+        "prate": 14.44
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10075,
+        "coor": {
+          "latitude": 40.77,
+          "longitude": -73.95
+        },
+        "case": 417.0,
+        "prate": 19.33
+      },
+      {
+        "area": "Upper East Side",
+        "zcta": 10128,
+        "coor": {
+          "latitude": 40.78,
+          "longitude": -73.95
+        },
+        "case": 624.0,
+        "prate": 14.97
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10280,
+        "coor": {
+          "latitude": 40.708702,
+          "longitude": -74.01715
+        },
+        "case": 50.0,
+        "prate": 12.17
+      },
+      {
+        "area": "Lower Manhattan",
+        "zcta": 10282,
+        "coor": {
+          "latitude": 40.716904,
+          "longitude": -74.015159
+        },
+        "case": 70.0,
+        "prate": 22.36
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <div id="cont" style="position: absolute; width: 100%; height: 100%;"></div>
+    </body>
+
+    <script src="../cube.js"></script>
+    
+    <script>
+        let C
+
+        const Center = {latitude: 40.760366, longitude: -73.983888} // NYC
+
+        // Get Container
+        const container = document.getElementById('cont')
+
+        Init()
+        Update()
+
+        async function Init(){
+
+            // Init CUBE Instance
+            C = new CUBE.Space(container, {
+                background: "333333", 
+                center: Center, 
+                scale: 5,
+                camera:{
+                    position: {x: 40, y: 30, z: 40}
+                }
+            })
+
+            let shaderEngine = new CUBE.ShaderEngine(C)
+            C.SetShaderEngine(shaderEngine)
+
+            // NYC NAT MAP
+            let nyc = await (await fetch('./assets/geo/nyc/manhattan.geojson')).json()
+            let nyc_geo = new CUBE.GeoJsonLayer("nyc", nyc).AdministrativeMap({border: true, height: 2})
+            C.Add(nyc_geo)
+            nyc_geo.position.y = 0
+
+            // Process Data
+            let population = await (await fetch('./assets/geo/nyc/pop.json')).json()
+            let pop = []
+            for(let i=0;i<population.length;i++){
+                pop.push({location: population[i].center, val: population[i].val / 550})
+            }
+
+            // Main Code
+            let heat = new CUBE.Datasets("population", pop).Heatmap(70, 2.5)
+            C.Add(heat)
+            heat.position.set(0, 10, 0)
+            C.GetShaderEngine().Register(heat.children[0], "uniforms", "heightColor", {max: 2, min: 1, step: 0.004})
+        }
+
+        function Update(){
+            requestAnimationFrame(Update)
+            C.Runtime()
+        }
+    </script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</html>

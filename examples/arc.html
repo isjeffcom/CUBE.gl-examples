@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <div id="cont" style="position: absolute; width: 100%; height: 100%;"></div>
+    </body>
+
+    <script src="../cube.js"></script>
+
+    <script>
+        let C
+
+        const Center = {latitude: 34.710554, longitude: 103.699520} // China
+
+        // Get Container
+        const container = document.getElementById('cont')
+
+        Init()
+        Update()
+
+        async function Init(){
+
+            // Init CUBE Instance
+            C = new CUBE.Space(container, {
+                background: "333333", 
+                center: Center, 
+                scale: .002,
+                camera: {
+                    position: {x: 5, y: 5, z: 5}
+                }
+            })
+
+            // Add Geojson Map Layer
+            const china = await (await fetch('./assets/geo/china.geojson')).json()
+            C.Add(new CUBE.GeoJsonLayer("china", china).AdministrativeMap({border: true, height: .5}))
+            
+            // Defind wgs84 coors for 3 place
+            // Remember to set y value for Arc as the administrative map has extruded 0.5 in height
+            const shanghai = {latitude: 31.230689, longitude: 121.473723}
+            const shenzhen = {latitude: 22.540368, longitude: 113.934476, altitude: .5}
+            const beijing = {latitude: 39.907787, longitude: 116.397875}
+
+            // Set arc lines
+            const arc1 = new CUBE.Data("shanghaiToShenzhen").Arc(shanghai, shenzhen, 500, .5)
+            const arc2 = new CUBE.Data("shanghaiToBeijing").Arc(shanghai, beijing, 500, 0) // you can either set yOffset value or change altitude value of the coordinate in this case
+            const arc3 = new CUBE.Data("BeijingToShenzhen").Arc(beijing, shenzhen, 500, .5)
+
+            // Add to scene
+            C.Add(arc1)
+            C.Add(arc2)
+            C.Add(arc3)
+        }
+
+        function Update(){
+            requestAnimationFrame(Update)
+            C.Runtime()
+        }
+    </script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</html>
