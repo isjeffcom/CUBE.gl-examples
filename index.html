@@ -48,7 +48,8 @@
                                     class="menu-s-s" 
                                     v-for="item in val" 
                                     :key="item.name" 
-                                    v-on:click="toDemo(item.link)">
+                                    v-on:click="toDemo(item.link)"
+                                    :style="'font-weight:' + (item.link === currentDemo ? 'bold;' : 'lighter;')">
 
                                     {{ item.name }}
                                     
@@ -64,7 +65,7 @@
 
                 <div id="content">
                     <div v-if="switchDemo" style="height: 100%;">
-                        <iframe :src="currentDemo" frameborder="0" width="100%" height="100%"></iframe>
+                        <iframe :src="base + currentDemo" frameborder="0" width="100%" height="100%"></iframe>
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
                         v-on:click="toCase(item.link)">
 
                         <div class="showcases-s-img">
-                            <img :src="item.preview" :alt="item.name">
+                            <img :src="base + item.preview" :alt="item.name">
                         </div>
 
                         <div class="showcases-s-txt">{{ item.name }}</div>
@@ -102,7 +103,7 @@
                 return{
                     base: "https://demo.cubegl.org",
                     current: 1,
-                    currentDemo: "https://demo.cubegl.org" + "/examples/basic.html",
+                    currentDemo: "/examples/basic.html",
                     switchDemo: true,
                     nav: [
                         { view: 1, txt: "Example" },
@@ -152,6 +153,11 @@
                     
                 }
             },
+
+            created(){
+                //if(this.route[""])
+            },
+
             methods:{
                 toView(view){
                     this.current = view
@@ -159,7 +165,7 @@
                 toDemo(link){
 
                     this.switchDemo = false
-                    this.currentDemo = this.base + link
+                    this.currentDemo = link
                     this.$nextTick(()=>{
                         this.switchDemo = true
                     })
@@ -338,8 +344,15 @@
             height: 394px;
             background: rgba(255,255,255,.1);
             border-radius: 6px;
-            border: 1px solid rgba(255,255,255,.2)
+            border: 1px solid rgba(255,255,255,.2);
+            transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
+
+        .showcases-s:hover{
+            opacity: .8;
+        }
+
+
         .showcases-s-img{
             width: 576px;
             height: 324px;
