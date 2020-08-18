@@ -79,7 +79,7 @@
                         v-on:click="toCase(item.link)">
 
                         <div class="showcases-s-img">
-                            <img :src="item.preview" :alt="item.name">
+                            <img :src="base + item.preview" :alt="item.name">
                         </div>
 
                         <div class="showcases-s-txt">{{ item.name }}</div>
@@ -147,7 +147,7 @@
                         {
                             name: "Manhattan COVID-19, population, poverty and Taxi Trip", 
                             link: "./showcases/nyc",
-                            preview: "./showcases/assets/nyc.png"
+                            preview: "/showcases/assets/nyc_preview.png"
                         }
                     ]
                     
