@@ -1,33 +1,370 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>CUBE.gl Examples</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
 
     <body>
+
         <div id="app">
-            <li><a href="showcases/nyc/">New York City COVID-19 and Taxi Trip</a></li>
-            <li><a href="examples/basic.html">Basic Shape</a></li>
-            <br>
-            <h2>Data and Datasets</h2>
-            <br>
-            <li><a href="examples/arc.html">Data Arc</a></li>
-            <li><a href="examples/bars.html">Data Bar</a></li>
-            <li><a href="examples/heatmap.html">Datasets Heatmap</a></li>
-            <li><a href="examples/pointcloud.html">Datasets Point Cloud</a></li>
-            <br>
-            <h2>Layers</h2>
-            <br>
-            <li><a href="examples/administrative.html">Administrative Map Layer</a></li>
-            <li><a href="examples/bitmap.html">Tile Map Layer</a></li>
-            <li><a href="examples/terrain.html">Terrain Layer</a></li>
-            <br>
-            <h2>Model and Animation</h2>
-            <br>
-            <li><a href="examples/model.html">Load Model</a></li>
-            <li><a href="examples/gpspath.html">GPS Coordinate Animation</a></li>
-            <li><a href="examples/circular.html">Circular Animation</a></li>
+
+            <div id="nav">
+
+                <div id="nav-cont">
+
+                    <div id="nav-logo">
+                        CUBE.gl
+                    </div>
+
+                    <div 
+                        class="nav-s"
+                        v-for="item in nav" 
+                        :key="item.view"
+                        v-on:click="toView(item.view)">
+
+                        <div class="nav-txt">{{item.txt}}</div>
+                        <div class="nav-indi" v-show="current === item.view"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="alexamplesl" v-if="current === 1">
+                <div id="side">
+
+                    <div class="side-s side-examples">
+
+                        <div 
+                            class="menu-s" 
+                            v-for="(val, key) in examples" 
+                            :key="key">
+
+                            <div class="menu-s-title">{{key}}</div>
+
+                            <div class="menu-s-inner">
+
+                                <div 
+                                    class="menu-s-s" 
+                                    v-for="item in val" 
+                                    :key="item.name" 
+                                    v-on:click="toDemo(item.link)">
+
+                                    {{ item.name }}
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="content">
+                    <div v-if="switchDemo" style="height: 100%;">
+                        <iframe :src="currentDemo" frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="showcases" v-if="current === 2">
+                <div id="showcases-cont">
+                    <div 
+                        class="showcases-s" 
+                        v-for="item in showcases" 
+                        :key="item.name"
+                        v-on:click="toCase(item.link)">
+
+                        <div class="showcases-s-img">
+                            <img :src="item.preview" :alt="item.name">
+                        </div>
+
+                        <div class="showcases-s-txt">{{ item.name }}</div>
+
+                    </div>
+                </div>
+            </div>
+
             
-            
+
+            <!-- <li><a href="showcases/nyc/">New York City COVID-19 and Taxi Trip</a></li> -->
+
         </div>
+
     </body>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data(){
+                return{
+                    base: "https://demo.cubegl.org",
+                    current: 1,
+                    currentDemo: "https://demo.cubegl.org" + "/examples/basic.html",
+                    switchDemo: true,
+                    nav: [
+                        { view: 1, txt: "Example" },
+                        { view: 2, txt: "Showcase" }
+                    ],
+                    examples: {
+                        Basic: [
+                            {name: "Shapes", link: "/examples/basic.html"},
+                        ],
+                        Data: [
+                            {name: "Bar and Cylinder", link: "/examples/bars.html"},
+                            {name: "Arc Line", link: "/examples/arc.html"},
+                            {name: "Text", link: "/examples/text.html"}
+                        ],
+                        Datasets: [
+                            {name: "Heatmap", link: "/examples/heatmap.html"},
+                            {name: "Point Cloud", link: "/examples/pointcloud.html"}
+                        ],
+                        Layers: [
+                            {name: "Administrative Map", link: "/examples/administrative.html"},
+                            {name: "Building", link: "/examples/building.html"},
+                            {name: "Road", link: "/examples/road.html"},
+                            {name: "Animated Road", link: "/examples/roadsp.html"},
+                            {name: "Terrain", link: "/examples/terrain.html"}
+                        ],
+                        Polygon: [
+                            {name: "Polygon", link: "/examples/polygon.html"}
+                        ],
+                        Bitmap: [
+                            {name: "Tile Map", link: "/examples/bitmap.html"}
+                        ],
+                        Model: [
+                            {name: "Model", link: "/examples/model.html"}
+                        ],
+                        Animation: [
+                            {name: "GPS Path", link: "/examples/gpspath.html"},
+                            {name: "Circular", link: "/examples/circular.html"}
+                        ]
+                    },
+                    showcases: [
+                        {
+                            name: "Manhattan COVID-19, population, poverty and Taxi Trip", 
+                            link: "./showcases/nyc",
+                            preview: "./showcases/assets/nyc.png"
+                        }
+                    ]
+                    
+                }
+            },
+            methods:{
+                toView(view){
+                    this.current = view
+                },
+                toDemo(link){
+
+                    this.switchDemo = false
+                    this.currentDemo = this.base + link
+                    this.$nextTick(()=>{
+                        this.switchDemo = true
+                    })
+                },
+                toCase(link){
+                    window.open(link)
+                },
+
+            }
+        })
+    </script>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0); 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255,255,255,0.1); 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255,255,255,0.2); 
+        }
+
+        body{
+            background: #373A47;
+            color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-text-size-adjust: none;
+            -webkit-touch-callout: none;
+        }
+
+        #app{
+            position: relative;
+            height: 100%;
+            width: 100vw;
+        }
+
+        #nav{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 36px;
+            background: #2F313C;
+            color: #ffffff;
+            width: 100%;
+            padding: 16px;
+            z-index: 3;
+        }
+
+        #nav-cont{
+            display: flex;
+            margin-top: 8px;
+        }
+
+        #nav-logo{
+            margin-right: 54px;
+            margin-left: 8px;
+            opacity: 1;
+            transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            cursor: pointer;
+        }
+
+        #nav-logo:hover{
+            opacity: .7;
+        }
+
+        .nav-s{
+            margin-right: 40px;
+            font-weight: lighter;
+            transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            cursor: pointer;
+        }
+
+        .nav-s:hover{
+            opacity: .7;
+        }
+
+
+        .nav-indi{
+            width: 32px; 
+            height: 2px; 
+            background: #00E0FF; 
+            border-radius: 30px;
+            margin-top: 6px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        #examples{
+            display: flex;
+        }
+
+        #side{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 230px;
+            padding-top: 90px;
+            padding-left: 24px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-right: 2px solid rgba(0,0,0,.15);
+            z-index: 2;
+        }
+
+        .side-s{
+            line-height: 2em;
+            padding-bottom: 40px;
+        }
+
+        .menu-s-title{
+            font-weight: bold;
+            margin-top: 6px;
+            margin-bottom: 2px;
+            opacity: .35;
+            cursor: default;
+        }
+
+        .menu-s-inner{
+            margin-left: 12px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .menu-s-s{
+            cursor: pointer;
+        }
+
+        #content{
+            position: fixed;
+            right: 0;
+            top: 68px;
+            left: 256px;
+            bottom: 0;
+        }
+
+        #showcases{
+            width: 100%;
+            height: 100%;
+            margin-top: 100px;
+        }
+
+        #showcases-cont{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+        }
+
+        .showcases-s{
+            width: 616px;
+            height: 394px;
+            background: rgba(255,255,255,.1);
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,.2)
+        }
+        .showcases-s-img{
+            width: 576px;
+            height: 324px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+
+        .showcases-s-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .showcases-s-txt{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: -30px;
+            font-size: 14px;
+            opacity: 1;
+        }
+
+    </style>
+
+
 </html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <div id="cont" style="position: absolute; width: 100%; height: 100%;"></div>
+    </body>
+
+    <script src="../cube.js"></script>
+
+    <script>
+
+        let C
+
+        const Center = {latitude: 55.943686, longitude: -3.188822} // Edinburgh
+
+        // Get Container
+        const container = document.getElementById('cont')
+
+        Init()
+        Update()
+
+        async function Init(){
+
+            // Init CUBE Instance
+            C = new CUBE.Space(container, {
+                background: "333333", 
+                center: Center, 
+                scale: 10,
+                debug: true,
+                camera:{
+                    position: {x: 6, y: 10, z: 6},
+                }
+            })
+
+            // // Add a ground
+            let ground = new CUBE.Terrain().Ground(800, 800, 8)
+            this.C.Add(ground)
+            ground.position.y = -2.4
+
+            // Poverty map by polygon geometry
+            let poverty = await (await Request.AsyncGet('./assets/geo/poverty.json')).json()
+            poverty.forEach(area => {
+                let color
+                if(area.val >= 20) color = 0x826040
+                if(area.val >= 10 && area.val < 20) color = 0x698240
+                if(area.val < 10) color = 0xAA752A
+
+                const mesh = new CUBE.Polygon(area.code, area.polygon).Ground({code: area.code, val: area.val}, {color: color, height: .5})
+                this.C.Add(mesh)
+                mesh.position.y = -1
+            })
+        }
+
+        function Update(){
+            requestAnimationFrame(Update)
+            C.Runtime()
+        }
+    </script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</html>
