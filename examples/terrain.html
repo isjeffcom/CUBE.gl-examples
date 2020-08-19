@@ -45,12 +45,12 @@
 
             // Buildings
             const ed = await (await fetch('./assets/geo/project/building.geojson')).json()
-            const buildings = new CUBE.GeoJsonLayer("ed_buildings", ed).Buildings({merge: true, color: 0xE5E5E5, terrain})
+            const buildings = new CUBE.GeoLayer("ed_buildings", ed).Buildings({merge: true, color: 0xE5E5E5, terrain})
             C.Add(buildings)
 
             // Road
             let roadData = await (await fetch('./assets/geo/project/highway.geojson')).json()
-            let roads = new CUBE.GeoJsonLayer("ed_road", roadData).RoadSp({animation: true, animationEngine: aniEngine, terrain})
+            let roads = new CUBE.GeoLayer("ed_road", roadData).RoadSp({animation: true, animationEngine: aniEngine, terrain})
             C.Add(roads)
             roads.position.y = -1
         }

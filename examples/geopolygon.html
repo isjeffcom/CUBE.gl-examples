@@ -33,7 +33,7 @@
 
             // Data draw from 
             let island = await (await Request.AsyncGet('./assets/geo/cubemark.json')).json()
-            let custom = new CUBE.GeoJsonLayer("island", island).Polygon({merge: true})
+            let custom = new CUBE.GeoLayer("island", island).Polygon({merge: true})
             this.C.Add(custom)
 
         }

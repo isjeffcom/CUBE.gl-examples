@@ -38,7 +38,7 @@
 
             // Add Geojson Map Layer
             let china = await (await fetch('./assets/geo/china.geojson')).json()
-            C.Add(new CUBE.GeoJsonLayer("china", china).AdministrativeMap({border: true, height: .5}))
+            C.Add(new CUBE.GeoLayer("china", china).AdministrativeMap({border: true, height: .5}))
         }
 
         function Update(){

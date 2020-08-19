@@ -39,7 +39,7 @@
 
             // Load Edinburgh Buildings
             const ed = await (await fetch('./assets/geo/project/building.geojson')).json()
-            const buildings = new CUBE.GeoJsonLayer("ed_buildings", ed).Buildings({merge: true})
+            const buildings = new CUBE.GeoLayer("ed_buildings", ed).Buildings({merge: true})
             C.Add(buildings)
 
             // Create a cube
