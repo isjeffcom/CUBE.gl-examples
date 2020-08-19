@@ -42,21 +42,13 @@
             const buildings = new CUBE.GeoJsonLayer("ed_buildings", ed).Buildings({merge: true})
             C.Add(buildings)
 
-            // Load model
-            const posi = new CUBE.Coordinate("GPS", {latitude: 55.943686, longitude: -3.188822, altitude: 3}).ComputeWorldCoordinate()
-            const m = new CUBE.Model(posi.world)
-            m.LoadGLTF('./assets/models/satellite/scene.gltf').then(()=>{
+            // Create a cube
+            const box = new CUBE.Shapes("box", {x: 5, y:5, z:5}).Box(.5)
+            C.Add(box)
 
-                // Attach a THREE.Light to this object
-                let light = new C.three.DirectionalLight(0xffffff, .4)
-                light.position.set(2, 2, 2)
-                m.Attach(light)
-                C.Add(m.object)
-
-                let mAni = new CUBE.Animation("test", m.object, "circular", {startNow: true, repeat: true}).Circular(5, 5)
-                C.GetAniEngine().Register(mAni)
-            })
-
+            // Add animation
+            let mAni = new CUBE.Animation("test", box, "circular", {startNow: true, repeat: true}).Circular(5, 5)
+            C.GetAniEngine().Register(mAni)
 
         }
 

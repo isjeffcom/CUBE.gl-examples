@@ -66,6 +66,9 @@
                 <div id="content">
                     <div v-if="switchDemo" style="height: 100%;">
                         <iframe :src="base + currentDemo" frameborder="0" width="100%" height="100%"></iframe>
+                        <div id="content-code" v-on:click="toCode(currentDemo)">
+                            <div style="margin-top:6px;">Code</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,6 +105,7 @@
             data(){
                 return{
                     base: "https://demo.cubegl.org",
+                    git_base: "https://github.com/isjeffcom/CUBE.gl-examples/blob/master",
                     current: 1,
                     currentDemo: "/examples/basic.html",
                     switchDemo: true,
@@ -173,6 +177,9 @@
                 toCase(link){
                     window.open(link)
                 },
+                toCode(link){
+                    window.open(this.git_base + link)
+                }
 
             }
         })
@@ -211,6 +218,7 @@
             -webkit-font-smoothing: antialiased;
             font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
             overflow-x: hidden;
+            user-select: none;
             -webkit-overflow-scrolling: touch;
             -webkit-tap-highlight-color: rgba(0,0,0,0);
             -webkit-text-size-adjust: none;
@@ -375,6 +383,25 @@
             margin-top: -30px;
             font-size: 14px;
             opacity: 1;
+        }
+
+        #content-code{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: #00E0FF;
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+            width: 60px;
+            height: 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        #content-code:hover{
+            opacity:.7;
         }
 
     </style>

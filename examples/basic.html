@@ -34,7 +34,7 @@
             let posi = new CUBE.Coordinate("GPS", {latitude: 41.157937, longitude: -8.629108}).ComputeWorldCoordinate()
             C.Add(new CUBE.Shapes("Box", posi.world).Box(1))
 
-            // Add Sphere
+            // Add Shapes
             C.Add(new CUBE.Shapes("Sphere", {x: 2, y: 0, z: 2}).Sphere(1, 0x00ffff))
             C.Add(new CUBE.Shapes("Cylinder", {x: -2, y: 0, z: -2}).Cylinder(1, 0xff0000))
         }
