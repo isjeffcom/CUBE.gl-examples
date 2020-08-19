@@ -100,11 +100,13 @@
     </body>
 
     <script>
+        
         new Vue({
             el: "#app",
             data(){
                 return{
                     //base: "https://demo.cubegl.org",
+                    local: '',
                     base: "./",
                     git_base: "https://github.com/isjeffcom/CUBE.gl-examples/blob/master",
                     current: 1,
@@ -160,27 +162,57 @@
             },
 
             created(){
-                //if(this.route[""])
+
+                this.local = window.location.href.split("?")[0]
+
+                let check = window.location.href.split("?")[1] ? window.location.href.split("?")[1] : [-1]
+                if(check[0] != -1) check = check.split("=")
+                if(check[0] == "p"){
+                    this.toDemo("", check[1])
+                }
+                
+
             },
 
             methods:{
                 toView(view){
                     this.current = view
+                    if(view === 1){
+                        this.updateURL()
+                    } else {
+                        window.history.pushState({},0,this.local)
+                    }
                 },
-                toDemo(link){
+                toDemo(link, name){
 
                     this.switchDemo = false
-                    this.currentDemo = link
+
+                    if(name){
+                        this.currentDemo = "/examples/" + name + ".html"
+                    }else{
+                        this.currentDemo = link
+                    }
+                    
+
                     this.$nextTick(()=>{
                         this.switchDemo = true
                     })
+
+                    this.updateURL()
+
                 },
                 toCase(link){
                     window.open(link)
                 },
                 toCode(link){
                     window.open(this.git_base + link)
+                },
+                updateURL(){
+                    let project = this.currentDemo.split("/")[2]
+                    project = project.split(".")[0]
+                    window.history.pushState({},0,this.local + "?p=" + project)
                 }
+
 
             }
         })
