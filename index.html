@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <title>CUBE.gl Examples</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="description" content="CUBE.gl Examples">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="icon" href="./favicon.png">
         <script src="./vue.min.js"></script>
     </head>
 
@@ -13,7 +17,7 @@
 
                 <div id="nav-cont">
 
-                    <div id="nav-logo">
+                    <div id="nav-logo" v-on:click="openHome()">
                         CUBE.gl
                     </div>
 
@@ -154,7 +158,12 @@
                         {
                             name: "Manhattan COVID-19, population, poverty and taxi trip", 
                             link: "./showcases/nyc",
-                            preview: "/showcases/assets/nyc_preview.png"
+                            preview: "/showcases/assets/nyc_preview.gif"
+                        },
+                        {
+                            name: "Proto taxi traffic", 
+                            link: "./showcases/proto.html",
+                            preview: "/showcases/assets/proto_preview.gif"
                         }
                     ]
                     
@@ -175,6 +184,9 @@
             },
 
             methods:{
+                openHome(){
+                    window.open('https://cubegl.org')
+                },
                 toView(view){
                     this.current = view
                     if(view === 1){
@@ -384,6 +396,7 @@
             width: 616px;
             height: 394px;
             background: rgba(255,255,255,.1);
+            margin-right: 40px;
             border-radius: 6px;
             border: 1px solid rgba(255,255,255,.2);
             transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);

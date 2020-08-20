@@ -13,7 +13,7 @@
 
         let C
 
-        const Center = {latitude: 55.943686, longitude: -3.188822} // Edinburgh
+        const Center = {latitude: 40.760366, longitude: -73.983888} // NYC
 
         // Get Container
         const container = document.getElementById('cont')
@@ -27,17 +27,18 @@
             C = new CUBE.Space(container, {
                 background: "333333", 
                 center: Center, 
-                scale: 10,
+                scale: 2,
                 debug: true,
                 camera:{
                     position: {x: 6, y: 10, z: 6},
                 }
             })
 
-            // // Add a ground
-            let ground = new CUBE.Terrain().Ground(800, 800, 8)
-            C.Add(ground)
-            ground.position.y = -2.4
+            // NYC NAT MAP
+            let nyc = await (await fetch('./assets/geo/nyc/manhattan.geojson')).json()
+            let nyc_geo = new CUBE.GeoJsonLayer("nyc", nyc).AdministrativeMap({border: true, height: 2, collider: true})
+            C.Add(nyc_geo)
+            nyc_geo.position.y = -4
 
             // Poverty map by polygon geometry
             let poverty = await (await fetch('./assets/geo/poverty.json')).json()
@@ -49,7 +50,7 @@
 
                 const mesh = new CUBE.Polygon(area.code, area.polygon).Ground({code: area.code, val: area.val}, {color: color, height: .5})
                 C.Add(mesh)
-                mesh.position.y = -1
+                mesh.position.y = 4
             })
         }
 

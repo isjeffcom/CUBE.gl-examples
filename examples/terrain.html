@@ -26,7 +26,7 @@
             C = new CUBE.Space(container, {
                 background: "333333", 
                 center: Center, 
-                scale: 5,
+                scale: 8,
                 camera: {
                     position: {x: 5, y: 5, z: 5}
                 }
@@ -36,7 +36,6 @@
             const aniEngine = new CUBE.AnimationEngine(C)
             C.SetAniEngine(aniEngine)
 
-
             // Terrain
             const edt = await fetch('./assets/geo/project/terrain.tif')
             const buf = await edt.arrayBuffer()
@@ -45,7 +44,7 @@
 
             // Buildings
             const ed = await (await fetch('./assets/geo/project/building.geojson')).json()
-            const buildings = new CUBE.GeoLayer("ed_buildings", ed).Buildings({merge: true, color: 0xE5E5E5, terrain})
+            const buildings = new CUBE.GeoLayer("ed_buildings", ed).Buildings({merge: true, color: 0xCFD5E2, terrain})
             C.Add(buildings)
 
             // Road
