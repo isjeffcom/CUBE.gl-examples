@@ -1,10 +1,17 @@
 <html>
     <head>
-        <title>Test</title>
+        <title>CUBE.gl Building</title>
+        <link rel="icon" href="./favicon.png">
     </head>
 
     <body>
+        <div id="btns" style="position:fixed;top:15px;left:15px;z-index:999;">
+            <button onclick="flyto({latitude: 55.948554, longitude: -3.200126})">Fly To 55.948554, -3.200126</button>
+            <button onclick="flyto({latitude: 55.943686, longitude: -3.188822})">Fly To 55.943686, -3.188822</button>
+        </div>
+        
         <div id="cont" style="position: absolute; width: 100%; height: 100%;"></div>
+        
     </body>
 
     <script src="../cubegl.js"></script>
@@ -17,9 +24,13 @@
 
         // Get Container
         const container = document.getElementById('cont')
+        
+        // Init Building Layer, building need to be global this time
+        let buildings
 
         Init()
         Update()
+
 
         async function Init(){
 
@@ -27,7 +38,10 @@
             C = new CUBE.Space(container, {
                 background: "333333", 
                 center: Center, 
-                scale: 10,
+                scale: 5,
+                interaction:{
+                    enable: true
+                },
                 camera:{
                     position: {x: 6, y: 10, z: 6}
                 }
@@ -35,9 +49,15 @@
 
             // Load Edinburgh Buildings
             const ed = await (await fetch('./assets/geo/project/building.geojson')).json()
-            const buildings = new CUBE.GeoLayer("ed_buildings", ed).Buildings({merge: true, collider: true})
-            C.Add(buildings)
 
+             // collider must be set to True otherwise building cannot be detected when merge
+            buildings = new CUBE.GeoLayer("buildings", ed).Buildings({merge: true, collider: true})
+            C.Add(buildings)
+        }
+
+        function flyto(coor){
+            if(!C) return
+            C.Action.FlyToGPS(coor)
         }
 
         function Update(){

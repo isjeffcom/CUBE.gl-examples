@@ -1,13 +1,15 @@
 <html>
     <head>
-        <title>Test</title>
+        <title>CUBE.gl Building</title>
+        <link rel="icon" href="./favicon.png">
     </head>
 
     <body>
         <div id="cont" style="position: absolute; width: 100%; height: 100%;"></div>
         <div id="notice" style="position: fixed; top: 15px; width: 100%; text-align: center; display: block; color: #ffffff;">
-            Load model might take a while...(15MB)
+            Click and select building
         </div>
+        <div id="bname" style="position:fixed;bottom:20px; width:100%; text-align:center; color:aqua; background: rgba(0,0,0,0.8);"></div>
     </body>
 
     <script src="../cubegl.js"></script>
@@ -20,9 +22,21 @@
 
         // Get Container
         const container = document.getElementById('cont')
+        const bname = document.getElementById('bname')
+        
+        // Init Building Layer
+        let buildings
 
         Init()
         Update()
+
+        container.addEventListener("cube-select", (e)=>{
+            let ray = C.Ray(e, buildings)
+            if(ray){
+                C.Action.FocusOn(ray)
+                bname.innerHTML = ray.name === "building" ? "Unnamed Building" : ray.name
+            } 
+        })
 
         async function Init(){
 
@@ -30,7 +44,12 @@
             C = new CUBE.Space(container, {
                 background: "333333", 
                 center: Center, 
-                scale: 10,
+                scale: 5,
+                interaction: {
+                    enable: true,
+                    select: true,
+                    hover: true
+                },
                 camera:{
                     position: {x: 6, y: 10, z: 6}
                 }
@@ -38,20 +57,8 @@
 
             // Load Edinburgh Buildings
             const ed = await (await fetch('./assets/geo/project/building.geojson')).json()
-            const buildings = new CUBE.GeoLayer("ed_buildings", ed).Buildings({merge: true})
+            buildings = new CUBE.GeoLayer("buildings", ed).Buildings({merge: true, collider: true})
             C.Add(buildings)
-
-            // Load model
-            const posi = new CUBE.Coordinate("GPS", {latitude: 55.943686, longitude: -3.188822, altitude: 3}).ComputeWorldCoordinate()
-            const m = new CUBE.Model(posi.world)
-            m.LoadGLTF('./assets/models/satellite/scene.gltf').then(()=>{
-
-                // Attach a THREE.Light to this object
-                let light = new C.three.PointLight(0xFAFAFA, .5, 3)
-                light.position.set(0, 1.5, 0)
-                m.Attach(light)
-                C.Add(m.object)
-            })
         }
 
         function Update(){

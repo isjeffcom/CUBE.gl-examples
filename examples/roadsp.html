@@ -7,7 +7,7 @@
         <div id="cont" style="position: absolute; width: 100%; height: 100%;"></div>
     </body>
 
-    <script src="../cube.js"></script>
+    <script src="../cubegl.js"></script>
     
     <script>
         let C
@@ -43,7 +43,7 @@
 
             // Road
             let roadData = await (await fetch('./assets/geo/project/highway.geojson')).json()
-            let roads = new CUBE.GeoLayer("ed_road", roadData).RoadSp({animation: true, animationEngine: aniEngine})
+            let roads = new CUBE.GeoLayer("ed_road", roadData).RoadSp({animation: true, animationEngine: C.GetAniEngine()})
             C.Add(roads)
             roads.position.y = -1
         }
