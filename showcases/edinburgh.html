@@ -63,7 +63,7 @@
             let roadData = await (await fetch('./assets/geo/project/highway.geojson')).json()
             let roads = new CUBE.GeoLayer("ed_road", roadData).RoadSp({animation: true, animationEngine: aniEngine, terrain})
             C.Add(roads)
-            roads.position.y = -1
+            // roads.position.y = -1
 
             landmarks.forEach(lm => {
                 const txt = new CUBE.Data().Text(lm.coor, lm.name, .24, 0x00FF94)

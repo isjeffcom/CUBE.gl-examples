@@ -28,7 +28,7 @@
                 center: Center, 
                 scale: 5,
                 camera: {
-                    position: {x: 5, y: 5, z: 5}
+                    position: {x: 15, y: 15, z: 15}
                 }
             })
 
@@ -45,7 +45,7 @@
             let roadData = await (await fetch('./assets/geo/project/highway.geojson')).json()
             let roads = new CUBE.GeoLayer("ed_road", roadData).RoadSp({animation: true, animationEngine: C.GetAniEngine()})
             C.Add(roads)
-            roads.position.y = -1
+            // roads.position.y = -1
         }
 
         function Update(){

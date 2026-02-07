@@ -38,9 +38,9 @@
 
             // Road
             let roadData = await (await fetch('./assets/geo/project/highway.geojson')).json()
-            let roads = new CUBE.GeoLayer("ed_road", roadData).Road()
+            let roads = new CUBE.GeoLayer("ed_road", roadData).Road({width: 12})
             C.Add(roads)
-            roads.position.y = -1
+            // roads.position.y = -1
         }
 
         function Update(){
